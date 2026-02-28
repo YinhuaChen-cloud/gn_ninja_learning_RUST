@@ -1,0 +1,7 @@
+# BUILDCONFIG.gn 是 GN 的全局构建配置入口
+#（由根目录 .gn 的 buildconfig 指向）。
+# 这里适合放“全局默认规则”，例如默认工具链、全局编译参数、
+# 公共配置模板等。
+# set_default_toolchain 表示：当目标没有显式指定 toolchain 时，
+# 默认使用 //toolchain:default（即 toolchain/BUILD.gn 中定义的 default 工具链）。
+set_default_toolchain("//toolchain:default")

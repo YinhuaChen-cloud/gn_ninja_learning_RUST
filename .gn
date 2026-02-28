@@ -1,0 +1,7 @@
+# gn gen out 首先读取工程根目录的 .gn，
+# 这里指定了 buildconfig 为 BUILDCONFIG.gn。
+# 然后 GN 会基于这个配置去加载各目录里的 BUILD.gn，
+# 比如根目录的 BUILD.gn 和工具链的 BUILD.gn，
+# 最终在 out 里生成 Ninja 文件。
+
+buildconfig = "//BUILDCONFIG.gn"

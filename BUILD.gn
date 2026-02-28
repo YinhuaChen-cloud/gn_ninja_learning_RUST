@@ -1,0 +1,10 @@
+# 添加一个可执行目标 hello
+executable("hello") {
+  # 源文件列表
+  sources = [
+    "main.c",
+    "printf.c",
+  ]
+  # 头文件目录
+  include_dirs = [ "." ]
+}
