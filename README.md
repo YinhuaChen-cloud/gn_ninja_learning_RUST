@@ -9,7 +9,7 @@ ninja -C out hello
 
 预期输出：
 ```
-hello world
+Hello from RUST
 ```
 
 ---

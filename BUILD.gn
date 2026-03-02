@@ -2,9 +2,7 @@
 executable("hello") {
   # 源文件列表
   sources = [
-    "main.c",
-    "printf.c",
+    "main.rs",
+    "print.rs",
   ]
-  # 头文件目录
-  include_dirs = [ "." ]
 }

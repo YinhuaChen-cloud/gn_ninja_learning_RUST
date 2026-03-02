@@ -1,15 +1,7 @@
 toolchain("default") {
-  tool("cc") {
-    command = "gcc -MMD -MF {{output}}.d {{defines}} {{include_dirs}} {{cflags}} {{cflags_c}} -c {{source}} -o {{output}}"
-    depsformat = "gcc"
-    depfile = "{{output}}.d"
-    description = "CC {{source}}"
-    outputs = [ "{{source_out_dir}}/{{source_name_part}}.o" ]
-  }
-
-  tool("link") {
-    command = "gcc {{ldflags}} -o {{output}} {{inputs}} {{solibs}} {{libs}}"
-    description = "LINK {{output}}"
+  tool("rust_bin") {
+    command = "rustc {{source}} -o {{output}}"
+    description = "RUST {{source}}"
     outputs = [ "{{output_dir}}/{{target_output_name}}{{output_extension}}" ]
     default_output_dir = "{{root_out_dir}}"
   }
