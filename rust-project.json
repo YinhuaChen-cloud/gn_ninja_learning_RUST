@@ -1,0 +1,11 @@
+{
+  "crates": [
+    {
+      "display_name": "hello",
+      "root_module": "main.rs",
+      "edition": "2021",
+      "deps": [],
+      "is_workspace_member": true
+    }
+  ]
+}
